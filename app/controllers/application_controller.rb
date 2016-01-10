@@ -1,4 +1,3 @@
+# Controlleur principal de l'application
 class ApplicationController < ActionController::Base
-  def index
-  end
 end

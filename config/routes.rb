@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # Racine de l'application
-  root to: 'application#index'
+  root to: 'home#index'
 
   # Montage des différents engines
   mount Raindrops::Engine, at: '/raindrops'
