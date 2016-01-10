@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/rails/rails.git
-  revision: 78edeb33346e13ab33a62d2a6b553aabf5b3186a
+  revision: 0cffe1b316b010b53dd5b5c6a63e4082d23e216d
   specs:
     actioncable (5.0.0.beta1)
       actionpack (= 5.0.0.beta1)
@@ -73,6 +73,16 @@ GIT
       debug_inspector
       railties (>= 4.2)
 
+GIT
+  remote: git://github.com/shakacode/react_on_rails.git
+  revision: e899258e7ef032cdf8bd751e0765f0cf8f1646cc
+  tag: 2.0.0-rc.1
+  specs:
+    react_on_rails (2.0.0.rc.1)
+      connection_pool
+      execjs (~> 2.5)
+      rails (>= 3.2)
+
 PATH
   remote: ~/ruby/hydro/raindrops
   specs:
@@ -90,6 +100,12 @@ GEM
       activemodel (>= 4.0)
       railties (>= 4.0)
     arel (7.0.0)
+    autoprefixer-rails (6.2.3)
+      execjs
+      json
+    bootstrap-sass (3.3.6)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     builder (3.2.2)
     byebug (8.2.1)
     celluloid (0.17.2)
@@ -158,11 +174,8 @@ GEM
     rails-html-sanitizer (1.0.2)
       loofah (~> 2.0)
     rake (10.4.2)
-    react_on_rails (1.2.2)
-      connection_pool
-      execjs (~> 2.5)
-      rails (>= 3.2)
     redis (3.2.2)
+    sass (3.4.20)
     sidekiq (4.0.2)
       concurrent-ruby (~> 1.0)
       connection_pool (~> 2.2, >= 2.2.0)
@@ -193,11 +206,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass
   byebug
   puma
   rails!
   raindrops!
-  react_on_rails
+  react_on_rails!
   spring
   uglifier (>= 1.3.0)
   web-console!

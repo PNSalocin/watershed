@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   # Racine de l'application
   root to: 'home#index'
 
+  # React
+  get 'hello_world', to: 'hello_world#index'
+
   # Montage des différents engines
   mount Raindrops::Engine, at: '/raindrops'
 

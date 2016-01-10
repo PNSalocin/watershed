@@ -1,34 +1,31 @@
 {
-  "name": "watershed",
-  "version": "0.0.0dev",
-  "description": "Front-end for hydro modules",
-  "author": "Nicolas MERELLI <nicolas.merelli@gmail.com>",
+  "name": "react-webpack-rails-tutorial",
+  "version": "1.1.1",
+  "description": "Built using the react_on_rails generator. Allows you to run npm install from root.",
+  "main": "server.js",
+  "engines": {
+    "node": "4.2.0",
+    "npm": "3.3.6"
+  },
   "scripts": {
     "postinstall": "cd client && npm install",
-    "test": "rspec && npm run test:client && npm run lint",
-    "test:client": "(cd client && npm run test --silent)",
-    "lint": "(cd client && npm run lint --silent)",
-    "build:clean": "rm app/assets/webpack/*",
-    "build:client": "(cd client && npm run build:client --silent)",
-    "build:server": "(cd client && npm run build:server --silent)",
-    "build:dev:client": "(cd client && npm run build:dev:client --silent)",
-    "build:dev:server": "(cd client && npm run build:dev:server --silent)",
-    "build:test:client": "(cd client && npm run build:test:client --silent)",
-    "start": "(cd client && npm run start --silent)"
+    "test": "rspec && (cd client && npm run lint)"
   },
-  "main": "lib/foo.js",
-  "homepage": "https://github.com/PNSalocin/watershed",
   "repository": {
     "type": "git",
-    "url": "https://github.com/PNSalocin/watershed"
-  },
-  "bugs": {
-    "url": "https://github.com/nodejitsu/watershed/issues"
+    "url": "https://github.com/shakacode/react-webpack-rails-tutorial.git"
   },
   "keywords": [
-    "watershed",
+    "react",
+    "tutorial",
+    "comment",
+    "example"
   ],
-  "dependencies": {},
-  "devDependencies": {},
-  "license": "MIT"
+  "author": "justin808",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shakacode/react-webpack-rails-tutorial/issues"
+  },
+  "homepage": "https://github.com/shakacode/react-webpack-rails-tutorial",
+  "dependencies": {}
 }

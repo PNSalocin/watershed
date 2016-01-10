@@ -22,4 +22,5 @@ group :development do
   gem 'raindrops', path: '~/ruby/hydro/raindrops'
 end
 
-gem 'react_on_rails'
+gem 'react_on_rails', github: 'shakacode/react_on_rails', tag: '2.0.0-rc.1'
+gem 'bootstrap-sass'
